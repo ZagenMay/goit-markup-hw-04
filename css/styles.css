@@ -124,7 +124,7 @@ ol {
   color: var(--descriprion-font-color);
 }
 .mail-link:hover,
-.mail-link :focus {
+.mail-link:focus {
   color: var(--accent-color);
 }
 .tel-link:hover,
@@ -155,7 +155,8 @@ ol {
     url(../img/hero-img-bgd.jpg);
   background-color: var(--second-background-color);
   background-size: auto auto;
-  margin: 0 151px;
+  max-width: 1600px;
+  margin: 0 auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -231,6 +232,12 @@ ol {
   background-color: var(--background-color-team);
   border-radius: 4px;
 }
+.features-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 /* ================END FEATURES========== */
 
 /* =================ACTIVITY============== */
@@ -289,7 +296,7 @@ ol {
   margin-top: -30px;
 }
 .team-box {
-  padding-top: 30px;
+  padding: 30px 32px;
 }
 
 .team-items {
@@ -304,9 +311,6 @@ ol {
 .team-social-list {
   display: flex;
   justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
   margin-top: 16px;
 }
 
@@ -327,6 +331,7 @@ ol {
 .team-social-list-link:hover,
 .team-social-list-link:focus {
   background-color: var(--accent-color);
+  fill: var(--secondary-font-color);
 }
 
 /* ======================END OUR TEAM============== */
@@ -498,6 +503,7 @@ ol {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-font-color);
 }
 .projects-description {
   font-weight: normal;
@@ -538,5 +544,13 @@ ol {
 }
 .projects-img {
   display: block;
+}
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* ===================END PORTFOLIO============= */
